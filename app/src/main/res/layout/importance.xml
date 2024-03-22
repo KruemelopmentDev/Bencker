@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="0.5dp"
+        android:divider="@android:color/darker_gray"
+        android:layout_alignParentTop="true" />
+
+    <com.rey.material.widget.FloatingActionButton
+        android:id="@+id/floating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        app:fab_iconSrc="@drawable/plus"
+        app:fab_backgroundColor="@color/colorAccent"
+        app:fab_iconSize="40dp"
+        app:rd_enable="true"
+        app:rd_style="@style/Material.Drawable.Ripple.Touch.MatchView" />
+</RelativeLayout>

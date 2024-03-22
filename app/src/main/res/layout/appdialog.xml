@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rey.material.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="?attr/colorBackgroundFloating">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/searchbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/suchbild"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelAlwaysShown="false"
+        app:met_floatingLabelAnimating="true"
+        app:met_textColor="?android:attr/textColorPrimary"
+        app:met_floatingLabelText="Suchen" />
+
+    <com.rey.material.widget.ImageView
+        android:id="@+id/suchbild"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/searchbox"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listeapps"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchbox"
+        android:background="?attr/colorBackgroundFloating"
+        android:listSelector="@android:color/transparent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</com.rey.material.widget.RelativeLayout>

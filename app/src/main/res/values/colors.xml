@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e25b00</color>
+    <color name="colorPrimaryDark">#b94400</color>
+    <color name="colorAccent">#FF6600</color>
+    <color name="blackhg">#d6000000</color>
+    <color name="blackhgalarm">#64000000</color>
+    <color name="bluelink">#000ac6</color>
+    <color name="grey">#888888</color>
+    <color name="white">#ffffff</color>
+</resources>

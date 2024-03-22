@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rey.material.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    app:rd_enable="true"
+    app:rd_style="@style/Material.Drawable.Ripple.Wave"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.rey.material.widget.ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+    <com.rey.material.widget.TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:singleLine="true"
+        android:text="TextView"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.rey.material.widget.TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/imageView"
+        android:singleLine="true"
+        android:textColor="?android:attr/textColorSecondary"
+        android:text="TextView" />
+
+</com.rey.material.widget.RelativeLayout>

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewAlarm">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <com.rey.material.widget.RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox2"
+                android:singleLine="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelTextColor="?android:attr/textColorSecondary"
+                app:met_textColor="?android:attr/textColorPrimary"
+                app:met_floatingLabelText="@string/alarm_name" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/editText1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox2"
+                android:singleLine="true"
+                app:met_floatingLabelTextColor="?android:attr/textColorSecondary"
+                app:met_textColor="?android:attr/textColorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelText="@string/message" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/editText2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/editText2"
+                android:checked="true"
+                android:gravity="center"
+                app:buttonTint="@color/colorPrimary"
+                app:cbd_strokeColor="@color/colorPrimary" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/editText2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox3"
+                android:singleLine="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextColor="?android:attr/textColorSecondary"
+                app:met_textColor="?android:attr/textColorPrimary"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelText="@string/absender" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/editText3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/editText3"
+                android:checked="true"
+                android:gravity="center"
+                app:buttonTint="@color/colorPrimary"
+                app:cbd_strokeColor="@color/colorPrimary" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/editText3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox4"
+                android:singleLine="true"
+                app:met_floatingLabelTextColor="?android:attr/textColorSecondary"
+                app:met_textColor="?android:attr/textColorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelText="@string/gruppe" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/editText4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/editText4"
+                android:checked="true"
+                android:gravity="center"
+                app:buttonTint="@color/colorPrimary"
+                app:cbd_strokeColor="@color/colorPrimary" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/editText4"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox5"
+                android:focusableInTouchMode="false"
+                android:singleLine="true"
+                app:met_floatingLabel="highlight"
+                app:met_textColor="?android:attr/textColorPrimary"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelText="@string/app"
+                app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/editText5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/editText5"
+                android:checked="true"
+                android:gravity="center"
+                app:buttonTint="@color/colorPrimary"
+                app:cbd_strokeColor="@color/colorPrimary" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/editText5"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox6"
+                android:focusableInTouchMode="false"
+                android:singleLine="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelText="@string/ringtone"
+                app:met_textColor="?android:attr/textColorPrimary"
+                app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/editText6"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/editText6"
+                android:checked="true"
+                android:gravity="center"
+                app:buttonTint="@color/colorPrimary"
+                app:cbd_strokeColor="@color/colorPrimary" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText6"
+                android:text="@string/vibration"
+                android:textColor="@color/colorPrimary" />
+
+            <com.rey.material.widget.Slider
+                android:id="@+id/slider1"
+                style="@style/Material.Widget.Slider"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/textView1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox6"
+                android:gravity="center"
+                app:sl_discreteMode="true"
+                app:sl_maxValue="100"
+                app:sl_minValue="1"
+                app:sl_secondaryColor="@color/grey"
+                app:sl_stepValue="1"
+                app:sl_value="10" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/slider1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/slider1"
+                android:checked="true"
+                android:gravity="center"
+                app:buttonTint="@color/colorPrimary"
+                app:cbd_strokeColor="@color/colorPrimary" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/slider1"
+                android:text="@string/volume"
+                android:textColor="@color/colorPrimary" />
+
+            <com.rey.material.widget.Slider
+                android:id="@+id/slider2"
+                style="@style/Material.Widget.Slider"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/textView2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox7"
+                android:gravity="center"
+                app:sl_discreteMode="true"
+                app:sl_maxValue="100"
+                app:sl_minValue="1"
+                app:sl_secondaryColor="@color/grey"
+                app:sl_stepValue="1"
+                app:sl_value="50" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/slider2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/slider2"
+                android:checked="true"
+                android:gravity="center"
+                app:buttonTint="@color/colorPrimary"
+                app:cbd_strokeColor="@color/colorPrimary" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/slider2"
+                android:text="@string/inrease_volume"
+                android:textColor="@color/colorPrimary" />
+
+            <com.rey.material.widget.Slider
+                android:id="@+id/slider3"
+                style="@style/Material.Widget.Slider"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/textView3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox8"
+                android:gravity="center"
+                app:sl_discreteMode="true"
+                app:sl_maxValue="100"
+                app:sl_minValue="1"
+                app:sl_secondaryColor="@color/grey"
+                app:sl_stepValue="1"
+                app:sl_value="30" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/slider3"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/slider3"
+                android:checked="true"
+                android:gravity="center"
+                app:buttonTint="@color/colorPrimary"
+                app:cbd_strokeColor="@color/colorPrimary" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editText7"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/slider3"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox9"
+                android:focusableInTouchMode="false"
+                android:singleLine="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelText="@string/niwv"
+                app:met_textColor="?android:attr/textColorPrimary"
+                app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/editText7"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/editText7"
+                android:checked="true"
+                android:gravity="center"
+                app:buttonTint="@color/colorPrimary"
+                app:cbd_strokeColor="@color/colorPrimary" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editText8"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/editText7"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox10"
+                android:focusableInTouchMode="false"
+                android:singleLine="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelText="@string/niwn"
+                app:met_textColor="?android:attr/textColorPrimary"
+                app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/editText8"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/editText8"
+                android:checked="true"
+                android:gravity="center"
+                app:buttonTint="@color/colorPrimary"
+                app:cbd_strokeColor="@color/colorPrimary" />
+
+            <com.rey.material.widget.Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/editText8"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox11"
+                android:dropDownWidth="wrap_content"
+                android:paddingEnd="10dp"
+                app:spn_arrowAnimClockwise="true"
+                app:spn_arrowAnimDuration="100"
+                app:spn_arrowColor="@color/colorPrimary"
+                app:spn_arrowSize="5dp"
+                app:spn_arrowSwitchMode="true"
+                app:spn_label="@string/activated"
+                app:spn_labelEnable="true"
+                app:spn_labelTextColor="@color/colorPrimary" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/editText9"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/spinner"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox11"
+                android:digits="01234567890:"
+                android:singleLine="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelAlwaysShown="true"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabelText="@string/schlummern2"
+                app:met_textColor="?android:attr/textColorPrimary"
+                app:met_floatingLabelTextColor="@color/colorPrimaryDark" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText9"
+                android:text="@string/waitingtimexml"
+                android:textColor="@color/colorPrimary" />
+
+            <com.rey.material.widget.Slider
+                android:id="@+id/slider4"
+                style="@style/Material.Widget.Slider"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/textView4"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox12"
+                android:gravity="center"
+                app:sl_discreteMode="true"
+                app:sl_maxValue="60"
+                app:sl_minValue="1"
+                app:sl_secondaryColor="@color/grey"
+                app:sl_stepValue="1"
+                app:sl_value="30" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox12"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/slider4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/slider4"
+                android:checked="true"
+                android:gravity="center"
+                app:buttonTint="@color/colorPrimary"
+                app:cbd_strokeColor="@color/colorPrimary" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/slider4"
+                android:layout_below="@id/slider4"
+                android:text="@string/exitsleepxml"
+                android:textColor="@color/colorPrimary" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox13"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@id/textView5"
+                android:layout_alignParentEnd="true"
+                android:checked="true"
+                android:gravity="center"
+                app:buttonTint="@color/colorPrimary"
+                app:cbd_strokeColor="@color/colorPrimary" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView5"
+                android:layout_marginTop="10dp"
+                android:text="@string/importancelevel"
+                android:textColor="@color/colorPrimary" />
+
+            <com.rey.material.widget.Slider
+                android:id="@+id/slider5"
+                style="@style/Material.Widget.Slider"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/textView6"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/checkbox14"
+                android:gravity="center"
+                app:sl_discreteMode="true"
+                app:sl_secondaryColor="@color/grey"
+                app:sl_stepValue="1" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/checkbox14"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@id/slider5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/slider5"
+                android:checked="false"
+                android:gravity="center"
+                app:buttonTint="@color/colorPrimary"
+                app:cbd_strokeColor="@color/colorPrimary" />
+
+        </com.rey.material.widget.RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

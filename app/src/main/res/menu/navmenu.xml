@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" android:id="@+id/all">
+        <item
+            android:id="@+id/newbewecker"
+            android:checkable="true"
+            android:icon="@drawable/newbecker"
+            android:title="Neuer Bencker" />
+        <item
+            android:id="@+id/allbewecker"
+            android:checkable="true"
+            android:checked="true"
+            android:icon="@drawable/overview"
+            android:title="Alle Bencker"/>
+        <item
+            android:id="@+id/sleeping"
+            android:checkable="true"
+            android:icon="@drawable/sleep"
+            android:title="Schlummernde Bencker"/>
+        <item
+            android:id="@+id/priorities"
+            android:checkable="true"
+            android:icon="@drawable/importance"
+            android:title="Prioritäten"/>
+    </group>
+    <group android:checkableBehavior="single" android:id="@+id/all2">
+        <item
+            android:id="@+id/settings"
+            android:checkable="true"
+            android:icon="@drawable/settings2"
+            android:title="Einstellungen" />
+    </group>
+    <group android:title="Über" android:checkableBehavior="single" android:id="@+id/all3">
+        <item
+            android:id="@+id/feed"
+            android:checkable="false"
+            android:icon="@drawable/at"
+            android:title="Kontakt" />
+        <item
+            android:id="@+id/nutz"
+            android:checkable="false"
+            android:icon="@drawable/open_in_new"
+            android:title="Nutzungsbedingungen" />
+        <item
+            android:id="@+id/daten"
+            android:checkable="false"
+            android:icon="@drawable/open_in_new"
+            android:title="Datenschutzerklärung" />
+        <item android:title="Open-Source-Bibliotheken" android:id="@+id/sources" android:checkable="true"
+            android:icon="@drawable/sources"/>
+    </group>
+
+</menu>

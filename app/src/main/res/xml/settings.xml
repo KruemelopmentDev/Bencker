@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:iconSpaceReserved="false" app:title="@string/settingstitle">
+        <Preference
+            app:title="@string/niwv"
+            app:summary="@string/stnwv"
+            app:iconSpaceReserved="false"
+            app:key="nwvw"/>
+        <Preference
+            app:title="@string/niwn"
+            app:summary="@string/stnwn"
+            app:iconSpaceReserved="false"
+            app:key="nwnw"/>
+        <Preference
+            app:title="@string/ringtone"
+            app:summary="@string/ringtonedes"
+            app:iconSpaceReserved="false"
+            app:key="ringt"/>
+        <EditTextPreference
+            app:title="@string/schlummern3"
+            app:summary="@string/stschlummern3"
+            app:defaultValue="05:00"
+            app:iconSpaceReserved="false"
+            app:key="schlummertime"/>
+        <SwitchPreference
+            app:title="@string/case_sensitive"
+            app:summary="@string/case_text"
+            app:key="sensitive"
+            app:iconSpaceReserved="false"
+            app:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false" app:key="category" app:title="@string/app_settings">
+    <Preference
+        app:title="@string/notifications"
+        app:iconSpaceReserved="false"
+        app:summary="@string/tosettings"
+        app:key="notificae"/>
+        <SwitchPreference
+            app:title="@string/draw_over_other_apps"
+            app:summary="@string/draw_over_apps_text"
+            app:key="drawapps"
+            app:iconSpaceReserved="false"
+            app:defaultValue="false"/>
+    <SwitchPreference
+        app:title="@string/showhint"
+        app:summary="@string/hinttext"
+        app:key="reminder"
+        app:iconSpaceReserved="false"
+        app:defaultValue="true"/>
+        <SwitchPreference
+            app:title="@string/statusnotification"
+            app:summary="@string/statusbartext"
+            app:key="statusbaricon"
+            app:iconSpaceReserved="false"
+            app:defaultValue="false"/>
+        <SwitchPreference
+            app:title="@string/sleepnotificatiom"
+            app:summary="@string/sleepnotif"
+            app:key="schlummerbaricon"
+            app:iconSpaceReserved="false"
+            app:defaultValue="false"/>
+        <SwitchPreference
+            app:key="darkmode"
+            app:title="Nachtmodus"
+            app:iconSpaceReserved="false"
+            app:defaultValue="false"
+            app:summaryOn="Der Nachtmodus ist aktiviert."
+            app:summaryOff="Der Nachtmodus ist deaktiviert."/>
+    </PreferenceCategory>
+</PreferenceScreen>
