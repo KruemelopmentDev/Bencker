@@ -22,24 +22,14 @@ import com.rey.material.widget.TextView
 class CustomBaseAdapter(
     var context: Context?,
     private var alarmliste: ArrayList<Alarmliste>,
-    myDB: DataBaseHelper,
-    snackBar: SnackBar,
-    mCallback: IProcessFilter
-):RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-
-    var myDB: DataBaseHelper
-    private var snackBar: SnackBar
+    var myDB: DataBaseHelper,
+    private var snackBar: SnackBar,
     private val mCallback: IProcessFilter
+):RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
 
     interface IProcessFilter {
         fun onProcessFilter()
-    }
-
-    init {
-        this.myDB = myDB
-        this.snackBar = snackBar
-        this.mCallback = mCallback
     }
 
     class MyViewHolder(var view: View) : RecyclerView.ViewHolder(view) {

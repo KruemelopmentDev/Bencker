@@ -366,8 +366,8 @@ class NewAlarm : Fragment() {
                 }
                 if (requireContext().packageManager.getLaunchIntentForPackage(p.packageName) != null) {
                     val appName =
-                        p.applicationInfo.loadLabel(requireContext().packageManager).toString()
-                    val icon = p.applicationInfo.loadIcon(requireContext().packageManager)
+                        p.applicationInfo!!.loadLabel(requireContext().packageManager).toString()
+                    val icon = p.applicationInfo!!.loadIcon(requireContext().packageManager)
                     rese.add(AppInfo(appName, p.packageName, icon))
                 }
             }

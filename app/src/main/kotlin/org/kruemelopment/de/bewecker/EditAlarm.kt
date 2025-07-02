@@ -491,8 +491,8 @@ class EditAlarm : AppCompatActivity() {
             for (i in packs.indices) {
                 val p = packs[i]
                 if (packageManager.getLaunchIntentForPackage(p.packageName) != null) {
-                    val appName = p.applicationInfo.loadLabel(packageManager).toString()
-                    val icon = p.applicationInfo.loadIcon(packageManager)
+                    val appName = p.applicationInfo!!.loadLabel(packageManager).toString()
+                    val icon = p.applicationInfo!!.loadIcon(packageManager)
                     rese.add(AppInfo(appName, p.packageName, icon))
                 }
             }

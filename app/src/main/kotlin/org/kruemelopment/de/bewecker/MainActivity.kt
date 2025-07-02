@@ -34,6 +34,7 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.preference.PreferenceManager
 import com.google.android.material.navigation.NavigationView
 import com.rey.material.widget.SnackBar
+import org.kruemelopment.de.bewecker.libraries.LibraryFragment
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,
     NewAlarm.IProcessFilter {
@@ -263,7 +264,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             supportActionBar!!.title = "Prioritäten"
         } else if (id == R.id.sources && oldid != R.id.sources) {
             transaction = supportFragmentManager.beginTransaction()
-            transaction!!.replace(R.id.frame_layout, Libraries())
+            transaction!!.replace(R.id.frame_layout, LibraryFragment())
             transaction!!.commit()
             lastitem!!.setChecked(false)
             item.setChecked(true)
